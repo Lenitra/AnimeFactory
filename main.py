@@ -6,9 +6,8 @@ from flask import Flask, render_template, request, redirect, session
 import os
 
 
-app = Flask(__name__, 
-    template_folder=os.path.abspath('html/'),
-    static_folder=os.path.abspath('static/'))
+app = Flask(__name__,
+    template_folder=os.path.abspath('html/'))
 
 app.secret_key = "ahcestcontulaspas"
 app.debug = True
@@ -20,5 +19,6 @@ def home():
 
 
 if __name__ == '__main__':
-    app.run(port=50000)
-
+    website_url = '51.178.41.82:5050'
+    app.config['SERVER_NAME'] = website_url
+    app.run()
