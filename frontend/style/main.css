@@ -1,0 +1,67 @@
+html{
+    height:100%;
+   }
+   body{
+    background-color:rgb(51, 48, 48);
+    height:100%;
+    margin:0;
+    padding:0;
+   }
+   #container{
+    width: 75%;
+    min-height:100%;
+    background-color:rgb(73, 71, 71);
+    margin:auto;
+   }
+   #titre{
+       margin: 0%;
+       text-align: center;
+   }
+   #list_manga{
+       background-color: rgb(73, 71, 71);
+   }
+
+   #Naruto{
+    width: 150px;
+    position: absolute;
+    right: 2.5%;
+    bottom: 0%;
+    }
+
+   #logo{
+    width: 180px;
+    position: absolute;
+    top: 2.5%;
+    left: 1%;
+   }
+
+   /* Menu */
+
+   .menu {
+    display: flex;         
+    padding:0;             
+    background-color: rgb(160, 160, 160);
+    justify-content: space-evenly;
+    }
+    .menu li {
+    list-style-type: none ;
+    }
+    .menu a {
+        display:block;
+        min-width: 120px;
+        margin: 0.5rem;
+        padding: 0.4rem 0;
+        text-align: center;
+        background-color: #000000;
+        color: #fff;
+        text-decoration: none;        /* Suppression du soulignement */
+        border: 1px solid #fff;       /* Ajout d'une bordure */
+        border-radius: 4px;           /* Arrondis des bordures */
+        transition: all 0.5s ;
+    }
+
+    .menu a:hover {
+        background-color: #575757;
+        color: #ffffff;
+        border-color: #ffffff;
+      }
