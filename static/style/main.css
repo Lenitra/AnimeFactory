@@ -1,67 +1,124 @@
+@font-face {
+    font-family: "manga";
+    src: url("../police/Manga.otf");
+}
+
 html{
     height:100%;
-   }
-   body{
+}
+
+body{
     background-color:rgb(51, 48, 48);
-    height:100%;
+    min-height:100%;
     margin:0;
     padding:0;
-   }
-   #container{
-    width: 75%;
-    min-height:100%;
-    background-color:rgb(73, 71, 71);
+}
+
+/* Division de la page en 3 */
+#container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
     margin:auto;
-   }
-   #titre{
-       margin: 0%;
-       text-align: center;
-   }
-   #list_manga{
-       background-color: rgb(73, 71, 71);
-   }
+}
 
-   #Naruto{
-    width: 150px;
-    position: absolute;
-    right: 2.5%;
-    bottom: 0%;
-    }
 
-   #logo{
-    width: 180px;
-    position: absolute;
+    /* Partie centrale */
+
+.central{
+    background-color:rgb(73, 71, 71);
+}
+
+#titre{
+    font-family: "manga", Verdana, sans-serif;
+    font-size: 80px;
+    margin: 0%;
+    text-align: center;
+}
+
+.manga{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    align-items: center;
+    margin-top: 2%;
+}
+
+.manga figure{
+    background-color: #1b1717;
+    color: white;
+    justify-self: center;
+    margin: 5px;
+    border: 3px;
+    overflow: hidden;
+}
+
+figure> img{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+
+.title{
+    text-align: center;
+    margin: 2%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.desc_manga{
+    padding: 0 3%;
+    margin-top: 0px;
+    color: gray;
+}
+/* Partie de gauche */
+#logo{
+    background-image: url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    height: 20%;
+    position: fixed;
     top: 2.5%;
-    left: 1%;
-   }
+    left: 2%;
+}
+
+/* Partie de droite */
+#Naruto{
+    background-image: url("../img/naruto2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 10%;
+    height: 60%;
+    position: fixed;
+    right: 2%;
+    bottom: 0%;
+}
 
    /* Menu */
 
-   .menu {
+nav {
     display: flex;         
     padding:0;             
     background-color: rgb(160, 160, 160);
     justify-content: space-evenly;
-    }
-    .menu li {
-    list-style-type: none ;
-    }
-    .menu a {
-        display:block;
-        min-width: 120px;
-        margin: 0.5rem;
-        padding: 0.4rem 0;
-        text-align: center;
-        background-color: #000000;
-        color: #fff;
-        text-decoration: none;        /* Suppression du soulignement */
-        border: 1px solid #fff;       /* Ajout d'une bordure */
-        border-radius: 4px;           /* Arrondis des bordures */
-        transition: all 0.5s ;
-    }
+}
 
-    .menu a:hover {
+nav a {
+    display:block;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 0.5s ;         /* Trantition à l'arrivée et à la sortie de la souris */
+}
+
+nav a:hover {
         background-color: #575757;
         color: #ffffff;
         border-color: #ffffff;
-      }
+}

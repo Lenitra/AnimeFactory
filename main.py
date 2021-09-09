@@ -22,6 +22,6 @@ def home():
 
 
 if __name__ == '__main__':
-    # website_url = '51.178.41.82:5050'
-    # app.config['SERVER_NAME'] = website_url
+    website_url = '51.178.41.82:5050'
+    app.config['SERVER_NAME'] = website_url
     app.run()
