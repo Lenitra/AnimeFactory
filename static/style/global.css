@@ -1,0 +1,85 @@
+@font-face {
+    font-family: "manga";
+    src: url("../police/Manga.otf");
+}
+
+html{
+    height:100%;
+}
+
+body{
+    background-color:rgb(51, 48, 48);
+    min-height:100%;
+    margin:0;
+    padding:0;
+}
+
+/* Division de la page en 3 */
+#container_page{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    margin:auto;
+}
+
+
+    /* Partie centrale */
+
+.central{
+    background-color:rgb(73, 71, 71);
+}
+
+#titre{
+    font-family: "manga", Verdana, sans-serif;
+    font-size: 80px;
+    margin: 0%;
+    text-align: center;
+}
+
+    /*Partie de droite */
+
+.connection{
+    display: block;
+    border: none;
+    background-color: #000000;
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    margin: 5% auto;
+    width: auto;
+    transition: all 0.5s ;
+}
+
+.connection:hover {
+    background-color: #575757;
+    color: #ffffff;
+    border-color: #ffffff;
+}
+    /* Menu */
+nav {
+    display: flex;         
+    padding:0;             
+    background-color: rgb(160, 160, 160);
+    justify-content: space-evenly;
+}
+
+nav a {
+    display:block;
+    min-width: 120px;
+    margin: 0.5rem;
+    padding: 0.4rem 0.4rem;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;        /* Suppression du soulignement */
+    border: 1px solid #fff;       /* Ajout d'une bordure */
+    border-radius: 4px;           /* Arrondis des bordures */
+    transition: all 0.5s ;         /* Trantition à l'arrivée et à la sortie de la souris */
+}
+
+nav a:hover {
+    background-color: #575757;
+    color: #ffffff;
+    border-color: #ffffff;
+}

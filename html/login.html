@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Manga Factory</title>
+    <script src = "../static/Js/Main.js"></script>
+    <link rel="stylesheet" media="screen" href="../static/style/global.css" />
+    <link rel="stylesheet" media="screen" href="../static/style/login.css" />
+</head>
+<body>
+    <div id="container_page">
+        <section class="column left"></section>
+        <section class="column central">
+            <h1 id="titre" >Manga Factory</h1>
+            <nav>
+
+                <a href="index.html">Accueil</a>
+
+                <a href="#">Les + Vues</a>
+
+                <a href="#">Nouveauté</a>
+
+                <a href="#">Favoris(en construction)</a>
+            </nav>
+            <div class="logDiv">
+                <article class="log">
+                    <form class="login_form" action="/action_page.php" method="post">        
+                        <div class="container">
+                            <h2>Connexion</h2><hr>
+                            <label for="loguser"></label>
+                            <input type="text" placeholder="Adresse mail" name="loguser" required>
+                            
+                            <label for="logmdp"></label>
+                            <input type="password" placeholder="Mot de passe" name="logmdp" required>
+                            
+                            <button type="submit">Se connecter</button>
+                        </div>
+                    
+                        <div class="container">
+                            <a class="forgmdp" href="#">Mot de passe oublié</a>
+                        </div>
+                    </form>
+                </article>
+                <article class="log">
+                    <form class="login_form" action="/action_page.php" method="post">        
+                        <div class="container">
+                            <h2>Inscription</h2><hr>
+                            
+                            <label for="inscpseudo"></label>
+                            <input type="text" placeholder="Pseudo" name="inscpseudo" required>
+                            
+                            <label for="inscuser"></label>
+                            <input type="text" placeholder="Adresse mail" name="inscuser" required>
+                            
+                            <label for="inscmdp"></label>
+                            <input type="password" placeholder="Mot de passe" name="inscmdp" required>
+                        
+                            <label for="conf_inscmdp"></label>
+                            <input type="password" placeholder="Confirmation du mot de passe" name="conf_inscmdp" required>
+                            
+                            <button type="submit">S'enregistrer</button>
+                        </div>
+                    </form>
+                </article>
+
+        </section>
+        <section class="column right"></section>
+    </div>
+</body>
+</html>

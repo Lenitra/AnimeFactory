@@ -1,0 +1,49 @@
+.logDiv{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);;
+    padding: 5%;
+}
+
+.log{
+    margin: 5%;
+}
+
+input[type=text], input[type=password] {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+form {
+    border: 3px solid #f1f1f1;
+    padding: 3%;
+    background-color: rgb(51, 48, 48);
+}
+
+button {
+    background-color: #000000;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #fff;
+    padding: 14px 20px;
+    margin: 3% auto;
+    cursor: pointer;
+    width: 50%;
+    display: block;
+}
+
+h2{
+    color: white;
+    text-align: center;
+    margin: 2%;
+    margin-bottom: 5%;
+}
+
+.forgmdp{
+    float: right;
+    color: rgb(155, 20, 20);
+    text-decoration: none;
+}
