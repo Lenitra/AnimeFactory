@@ -43,7 +43,10 @@ h2{
 }
 
 .forgmdp{
-    float: right;
-    color: rgb(155, 20, 20);
+    color: white;
     text-decoration: none;
+}
+
+.forgmdp:hover{
+    color: rgb(255, 0, 0);
 }
