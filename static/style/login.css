@@ -1,6 +1,6 @@
 .logDiv{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);;
+    grid-template-columns: repeat(2, 1fr);
     padding: 5%;
 }
 
@@ -8,13 +8,27 @@
     margin: 5%;
 }
 
-input[type=text], input[type=password] {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 12px 0;
+.log_cont {
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.icon {
+    padding: 10px;
+    background: black;
+    color: white;
+    min-width: 20px;
+    text-align: center;
+  }
+
+input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+    padding: 10px;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
 form {
@@ -31,7 +45,7 @@ button {
     padding: 14px 20px;
     margin: 3% auto;
     cursor: pointer;
-    width: 50%;
+    min-width: 50%;
     display: block;
 }
 
@@ -49,4 +63,11 @@ h2{
 
 .forgmdp:hover{
     color: rgb(255, 0, 0);
+}
+
+@media screen and (max-width: 1024px) {
+    .logDiv{
+        display: block;
+        padding: 5%;
+    }   
 }

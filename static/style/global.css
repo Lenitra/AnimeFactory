@@ -17,10 +17,9 @@ body{
 /* Division de la page en 3 */
 #container_page{
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-columns: 15% 70% 15%;
     margin:auto;
 }
-
 
     /* Partie centrale */
 
@@ -47,8 +46,8 @@ body{
     font-size: 20px;
     text-align: center;
     margin: 5% auto;
-    width: auto;
     transition: all 0.5s ;
+    width: auto ;
 }
 
 .connection:hover {
@@ -65,8 +64,9 @@ nav {
 }
 
 nav a {
+    font-size: 18px;
     display:block;
-    min-width: 120px;
+    min-width: 15%;
     margin: 0.5rem;
     padding: 0.4rem 0.4rem;
     text-align: center;
@@ -75,11 +75,28 @@ nav a {
     text-decoration: none;        /* Suppression du soulignement */
     border: 1px solid #fff;       /* Ajout d'une bordure */
     border-radius: 4px;           /* Arrondis des bordures */
-    transition: all 0.5s ;         /* Trantition à l'arrivée et à la sortie de la souris */
+    transition: all 0.5s ;         /* Trantition à l'arrivée et à la sortie de la souris */ 
 }
 
 nav a:hover {
     background-color: #575757;
     color: #ffffff;
     border-color: #ffffff;
+}
+
+@media only screen and (max-width: 1024px) {
+    .connection{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .connection, nav a{
+        font-size: 16px;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
 }
