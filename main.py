@@ -35,7 +35,7 @@ def checkreg():
     c_mdp = request.form["conf_inscmdp"]
     # capcha = request.form["capcha"]
     if logic.register(mail, mdp, psd) == 255:
-        
+        pass
 
 
 @app.route('/')
