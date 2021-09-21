@@ -1,0 +1,7 @@
+Les liens à mettre dans le html
+
+pour le "index.html"
+ - "/"
+
+ Pour la page de "login.html"
+- "/login"
